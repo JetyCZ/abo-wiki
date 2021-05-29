@@ -795,7 +795,7 @@ abstract class LoginSignupSpecialPage extends AuthManagerSpecialPage {
 				'username' => [
 					'label-raw' => "Jméno Příjmení - jméno obchodu" . $usernameHelpLink,
 					'id' => 'wpName2',
-					'placeholder-message' => $isLoggedIn ? 'createacct-another-username-ph'
+					'placeholder'.($isLoggedIn ?"-message":"") => $isLoggedIn ? 'createacct-another-username-ph'
 						: "František Novák - Obchůdeček s.r.o.",
 				],
 				'mailpassword' => [
