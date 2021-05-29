@@ -153,3 +153,4 @@ wfLoadExtension( 'WikiEditor' );
 $wgCategoryTreeSidebarRoot='Celá wiki';
 $wgSitename="Asociace bezobalových obchodů - wiki";
 # $wgServer='//www.asociace-bezobalu.cz';
+$wgCategoryTreeDisableCache = true;
