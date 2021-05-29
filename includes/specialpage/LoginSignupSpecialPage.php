@@ -793,10 +793,10 @@ abstract class LoginSignupSpecialPage extends AuthManagerSpecialPage {
 					'weight' => -105,
 				],
 				'username' => [
-					'label-raw' => "Jméno Příjmení - jméno obchodu (František Novák - Obchůdeček s.r.o.)" . $usernameHelpLink,
+					'label-raw' => "Jméno Příjmení - jméno obchodu" . $usernameHelpLink,
 					'id' => 'wpName2',
 					'placeholder-message' => $isLoggedIn ? 'createacct-another-username-ph'
-						: 'userlogin-yourname-ph',
+						: "František Novák - Obchůdeček s.r.o.",
 				],
 				'mailpassword' => [
 					// create account without providing password, a temporary one will be mailed
