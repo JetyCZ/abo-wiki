@@ -793,7 +793,7 @@ abstract class LoginSignupSpecialPage extends AuthManagerSpecialPage {
 					'weight' => -105,
 				],
 				'username' => [
-					'label-raw' => $this->msg( 'userlogin-yourname' )->escaped() . $usernameHelpLink,
+					'label-raw' => "Jméno Příjmení - jméno obchodu (František Novák - Obchůdeček s.r.o.)" . $usernameHelpLink,
 					'id' => 'wpName2',
 					'placeholder-message' => $isLoggedIn ? 'createacct-another-username-ph'
 						: 'userlogin-yourname-ph',
