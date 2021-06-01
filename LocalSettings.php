@@ -154,4 +154,22 @@ $wgCategoryTreeSidebarRoot='Celá wiki';
 $wgSitename="Asociace bezobalových obchodů - wiki";
 # $wgServer='//www.asociace-bezobalu.cz';
 $wgCategoryTreeDisableCache = true;
-$wgLogos="images/abo-logo-wiki.png";
+$logo = "{$wgScriptPath}/images/abo-logo-wiki.png";
+$wgLogos = [
+    '1x' => $logo,
+    '1.5x' => $logo,
+    '2x' => $logo,
+    'svg' => $logo,
+    'icon' => $logo,  // A version of the logo without wordmark and tagline
+    'wordmark' => [
+	'src' => $logo,
+	'1x' => $logo, // optional if you want to support browsers with SVG support with an SVG logo.
+	'width' => 481,
+	'height' => 127,
+    ],
+    'tagline' => [
+	'src' => $logo,
+	'width' => 481,
+	'height' => 127,
+    ],
+];
