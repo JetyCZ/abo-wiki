@@ -12,7 +12,7 @@
 
 # Protect against web entry
 if ( !defined( 'MEDIAWIKI' ) ) {
-	exit;
+    exit;
 }
 
 
@@ -27,10 +27,10 @@ $wgMetaNamespace = "Project";
 ## For more information on customizing the URLs
 ## (like /w/index.php/Page_title to /wiki/Page_title) please see:
 ## https://www.mediawiki.org/wiki/Manual:Short_URL
-$wgScriptPath = "/wiki";
+$wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://46.28.109.158";
+$wgServer='//wiki.asociace-bezobalu.cz';
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
@@ -152,7 +152,7 @@ wfLoadExtension( 'WikiEditor' );
 
 $wgCategoryTreeSidebarRoot='Celá wiki';
 $wgSitename="Asociace bezobalových obchodů - wiki";
-# $wgServer='//www.asociace-bezobalu.cz';
+
 $wgCategoryTreeDisableCache = true;
 $logo = "{$wgScriptPath}/images/abo-logo-wiki.png";
 $wgLogos = [
@@ -162,14 +162,14 @@ $wgLogos = [
     'svg' => $logo,
     'icon' => $logo,  // A version of the logo without wordmark and tagline
     'wordmark' => [
-	'src' => $logo,
-	'1x' => $logo, // optional if you want to support browsers with SVG support with an SVG logo.
-	'width' => 481,
-	'height' => 127,
+        'src' => $logo,
+        '1x' => $logo, // optional if you want to support browsers with SVG support with an SVG logo.
+        'width' => 481,
+        'height' => 127,
     ],
     'tagline' => [
-	'src' => $logo,
-	'width' => 481,
-	'height' => 127,
+        'src' => $logo,
+        'width' => 481,
+        'height' => 127,
     ],
 ];
