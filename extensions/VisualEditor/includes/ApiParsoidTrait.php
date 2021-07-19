@@ -71,13 +71,8 @@ trait ApiParsoidTrait {
 			$params = $vrs['modules']['parsoid'] ?? [];
 			$params['restbaseCompat'] = true;
 			// forward cookies on private wikis
-
-            // BEFORE:
-            // $params['forwardCookies'] = !MediaWikiServices::getInstance()->getPermissionManager()->isEveryoneAllowed( 'read' );
-            // AFTER: solving "Error contacting the Parsoid/RESTBase server: http-bad-status" when accessing Visual editor
-            $params['forwardCookies'] = true;
-            // AFTER END
-
+			$params['forwardCookies'] = !MediaWikiServices::getInstance()
+				->getPermissionManager()->isEveryoneAllowed( 'read' );
 		} else {
 			// No global modules defined, so no way to contact the document server.
 			$this->dieWithError( 'apierror-visualeditor-docserver-unconfigured', 'no_vrs' );
