@@ -30,7 +30,7 @@ $wgMetaNamespace = "Project";
 $wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer='http://wiki.asociace-bezobalu.cz';
+$wgServer='//wiki.asociace-bezobalu.cz';
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
