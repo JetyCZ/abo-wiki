@@ -486,7 +486,11 @@ class MultiHttpClient implements LoggerAwareInterface {
 			];
 
 			$url = $req['url'];
-			$query = http_build_query( $req['query'], '', '&', PHP_QUERY_RFC3986 );
+
+            if (str_contains($url,"/rest.php")) {
+                $url = str_replace("wiki.asociace-bezobalu.cz","46.28.109.158",$url);
+            }
+            $query = http_build_query( $req['query'], '', '&', PHP_QUERY_RFC3986 );
 			if ( $query != '' ) {
 				$url .= strpos( $req['url'], '?' ) === false ? "?$query" : "&$query";
 			}
