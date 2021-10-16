@@ -179,4 +179,3 @@ $wgLogos = [
 $wgGroupPermissions['*']['read'] = true;
 
 $wgGroupPermissions['*']['write'] = true;
-$wgVirtualRestConfig['modules']['parsoid']['forwardCookies'] = true;
