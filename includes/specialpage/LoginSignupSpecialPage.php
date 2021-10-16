@@ -795,7 +795,7 @@ abstract class LoginSignupSpecialPage extends AuthManagerSpecialPage {
 				'username' => [
 					'labelwgDefaultSkin-raw' => "Jméno Příjmení - jméno obchodu" . $usernameHelpLink,
 					'id' => 'wpName2',
-					'placeholder' => "František Novák - Semínko Častolovice",
+					'placeholder' => "Jan Orel - Krámek Bezobalu - Brozany 7 Pardubice",
 				],
 				'mailpassword' => [
 					// create account without providing password, a temporary one will be mailed
